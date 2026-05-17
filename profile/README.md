@@ -8,13 +8,26 @@
 
 ---
 
+*Companion paper at ACM TAAS (in submission, Q4 2026).*
+
 ## Repositories
 
-- **yonah-edu** — education vertical
-  - [yonah-edu-agent](https://github.com/yonah-ai/yonah-edu-agent) — Chalice REST + WebSocket API and CrewAI worker (Apache-2.0)
-  - [yonah-edu-page](https://github.com/yonah-ai/yonah-edu-page) — React + Vite frontend (Apache-2.0)
+### Framework (vertical-agnostic upstream)
 
-Additional verticals may follow as academic work on the same architectural pattern.
+- [yonah-agent](https://github.com/yonah-ai/yonah-agent) — framework backend: Chalice REST + WebSocket API, CrewAI worker, seven-tool surface, three-crew structure, PAC-AI substrate (Apache-2.0)
+- [yonah-page](https://github.com/yonah-ai/yonah-page) — framework frontend: React + Vite, pipeline visualisation, role-gated WSS client (Apache-2.0)
+
+### Verticals (forks of the framework)
+
+- **yonah-edu** — education vertical (accompanying paper at IJAIED 2026)
+  - [yonah-edu-agent](https://github.com/yonah-ai/yonah-edu-agent) — education backend (Apache-2.0)
+  - [yonah-edu-page](https://github.com/yonah-ai/yonah-edu-page) — education frontend (Apache-2.0)
+- **yonah-health** — health vertical (paper forthcoming) — *placeholder*
+- **yonah-hire** — hiring vertical (paper forthcoming) — *placeholder*
+
+Verticals fork the framework upstream and override the vertical-specific
+tool implementations, crew specialisations, and regulatory mapping tables.
+Framework improvements are pulled into each vertical via `git pull upstream main`.
 
 ## About the name
 
