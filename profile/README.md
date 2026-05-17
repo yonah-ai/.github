@@ -11,8 +11,8 @@
 ## Repositories
 
 - **yonah-edu** — education vertical
-  - [yonah-edu-backend](https://github.com/yonah-ai/yonah-edu-backend) — Chalice REST + WebSocket API and CrewAI worker (Apache-2.0)
-  - [yonah-edu-frontend](https://github.com/yonah-ai/yonah-edu-frontend) — React + Vite frontend (Apache-2.0)
+  - [edu-agent](https://github.com/yonah-ai/edu-agent) — Chalice REST + WebSocket API and CrewAI worker (Apache-2.0)
+  - [edu-page](https://github.com/yonah-ai/edu-page) — React + Vite frontend (Apache-2.0)
 
 Additional verticals may follow as academic work on the same architectural pattern.
 
