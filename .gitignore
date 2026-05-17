@@ -4,6 +4,6 @@
 .vscode/
 .idea/
 
-# Don't commit rendered logo binaries here — they go in dove-edu / dove-health
+# Don't commit rendered logo binaries here — they go in yonah-edu / yonah-health
 # brand/ folder; this repo only carries the *prompts* and *spec*.
 brand/renders/
