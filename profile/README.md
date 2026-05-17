@@ -1,6 +1,6 @@
 <div align="center">
 
-# Dove
+<img src="../logos/doveagent.jpg" alt="Dove Agent" width="640" />
 
 **A family of dual-audience autonomous AI agents with verifiable per-decision provenance, each scoped to a regulated domain.**
 
@@ -52,27 +52,12 @@ Every Dove agent makes the same three structural promises by construction, not b
 2. **Per-decision evidence.** Every tool invocation, every internal handoff, and every model call produces a content-hashed signed envelope persisted to an append-only provenance graph (W3C PROV under the hood). The graph is queryable by the affected person — directly through the agent, not through the deployer's logs — for the right-to-explanation that the relevant regulation requires.
 
 3. **Structural verifiers.** A small set of SDK-provided verifiers (`verify_integrity`, `verify_temporal_oversight`, `verify_pii_detachment`, `verify_negative_proof`, `verify_workflow_isolation`, plus domain-specific extensions) consume the provenance graph and produce typed pass/fail outputs. The verifier output is the per-decision answer to "was this decision made the way the regulation requires?"
-
-## Companion papers
-
-| Vertical | Paper | Venue | Status |
-|---|---|---|---|
-| dove-edu | *"Dove: The Rubric as Shared Contract — An Auditable Autonomous AI Agent for Professors and Students"* | International Journal of Artificial Intelligence in Education (IJAIED, Springer / Elsevier from Jan 2026) | Draft |
-| dove-health | TBD — see [proposals/dove-health.md](https://github.com/dove-agent/.github/blob/main/proposals/dove-health.md) | npj Digital Medicine (Nature) — primary target; JAMIA or Artificial Intelligence in Medicine as fallback | Proposal |
-| dove-hire | TBD | ICIS / Information Systems Research — Responsibility and Ethics track | Roadmap only |
-
-The IJAIED paper introduces the architectural pattern in detail; the dove-health and dove-hire papers will be sibling instantiations.
+ 
 
 ## Substrate and dependencies
 
 Each Dove imports the [PAC-AI](https://pypi.org/project/jhcontext-protocol/) substrate from PyPI rather than vendoring it: `jhcontext-sdk` provides envelopes, the PROV graph builder, the ForwardingEnforcer, and the structural verifiers; `jhcontext-protocol` provides the wire-level envelope schema. Keeping the substrate as a versioned PyPI dependency means improvements to one Dove improve all three.
-
-## Get involved
-
-- **Read the IJAIED paper** (link added when accepted) for the full architecture and use-case walk-through.
-- **Clone [dove-edu-backend](https://github.com/dove-agent/dove-edu-backend) and [dove-edu-frontend](https://github.com/dove-agent/dove-edu-frontend)** for the reference implementation; both run locally against LocalStack and deploy cleanly to AWS + Vercel.
-- **File an issue on the relevant repo** with the vertical tag (`edu`, `health`, `hire`) — design discussions, regulatory questions, and verifier proposals all welcome.
-- **Pitch a new vertical** by opening a discussion on this repo. The current shortlist beyond the three above includes `dove-finance` (lending decisions under FCRA / DORA), `dove-housing` (tenant screening under Fair Housing Act), and `dove-immigration` (visa adjudication assistance). The architectural pattern transfers wherever a regulated decision affects an identifiable person and a regulator wants per-decision evidence.
+ 
 
 ## Licence
 
