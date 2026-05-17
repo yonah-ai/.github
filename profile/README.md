@@ -1,6 +1,6 @@
 <div align="center">
 
-# Yonah AI Agent
+# Yonah AI
 
 *An academic open-source family of autonomous AI agents with verifiable per-decision provenance.*
 
@@ -11,8 +11,8 @@
 ## Repositories
 
 - **yonah-edu** — education vertical
-  - [edu-agent](https://github.com/yonah-ai/edu-agent) — Chalice REST + WebSocket API and CrewAI worker (Apache-2.0)
-  - [edu-page](https://github.com/yonah-ai/edu-page) — React + Vite frontend (Apache-2.0)
+  - [yonah-edu-agent](https://github.com/yonah-ai/yonah-edu-agent) — Chalice REST + WebSocket API and CrewAI worker (Apache-2.0)
+  - [yonah-edu-page](https://github.com/yonah-ai/yonah-edu-page) — React + Vite frontend (Apache-2.0)
 
 Additional verticals may follow as academic work on the same architectural pattern.
 
@@ -29,7 +29,7 @@ The dove returns from over the receding waters carrying evidence that the world 
 
 ## Project posture
 
-Yonah AI Agent is **academic open-source work**, accompanying peer-reviewed papers in the author's research portfolio. It has **no commercial purpose**.
+Yonah AI is **academic open-source work**, accompanying peer-reviewed papers in the author's research portfolio. It has **no commercial purpose**.
 
 ---
 
