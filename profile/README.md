@@ -20,14 +20,16 @@
 ### Verticals (forks of the framework)
 
 - **yonah-edu** — education vertical (accompanying paper at IJAIED 2026)
-  - [yonah-edu-agent](https://github.com/yonah-ai/yonah-edu-agent) — education backend (Apache-2.0)
-  - [yonah-edu-page](https://github.com/yonah-ai/yonah-edu-page) — education frontend (Apache-2.0)
+  - [yonah-agent-edu](https://github.com/yonah-ai/yonah-agent-edu) — education backend (Apache-2.0)
+  - [yonah-page-edu](https://github.com/yonah-ai/yonah-page-edu) — education frontend (Apache-2.0)
 - **yonah-health** — health vertical (paper forthcoming) — *placeholder*
 - **yonah-hire** — hiring vertical (paper forthcoming) — *placeholder*
 
-Verticals fork the framework upstream and override the vertical-specific
-tool implementations, crew specialisations, and regulatory mapping tables.
-Framework improvements are pulled into each vertical via `git pull upstream main`.
+Verticals derive from the framework upstream and override only the
+vertical-specific files in the documented override surface (artefact
+schema, voice, regulatory mapping, vertical crews). Framework
+improvements are pulled into each vertical via
+`git fetch upstream && git merge upstream/main`.
 
 ## About the name
 
