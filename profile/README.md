@@ -8,8 +8,6 @@
 
 ---
 
-*Companion paper at ACM TAAS (in submission, Q4 2026).*
-
 ## Repositories
 
 ### Framework (vertical-agnostic upstream)
@@ -19,7 +17,7 @@
 
 ### Verticals (forks of the framework)
 
-- **yonah-edu** — education vertical (accompanying paper at IJAIED 2026)
+- **yonah-edu** — education vertical
   - [yonah-agent-edu](https://github.com/yonah-ai/yonah-agent-edu) — education backend (Apache-2.0)
   - [yonah-page-edu](https://github.com/yonah-ai/yonah-page-edu) — education frontend (Apache-2.0)
 - **yonah-health** — health vertical (paper forthcoming) — *placeholder*
